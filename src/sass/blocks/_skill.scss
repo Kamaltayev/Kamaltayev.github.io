@@ -1,0 +1,27 @@
+.skill {
+  margin-top: 40px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: 270px 270px;
+    gap: 13px;
+  }
+  &__item {
+    padding: 30px 30px 25px 30px;
+    border: 1px solid black;
+
+    img {
+      margin-bottom: 20px;
+    }
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
+  &__descr {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+  }
+}

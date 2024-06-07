@@ -1,0 +1,40 @@
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../../img/domenico-loia-hGV2TfOh0ns-unsplash.jpg") no-repeat
+    59% / cover;
+  padding-top: 205px;
+  &__title {
+    font-size: 100px;
+    width: 532px;
+    margin-top: 10px;
+  }
+  &__subtitle {
+    @include before_circle;
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 250px;
+  }
+  &__link {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
+    font-size: 14px;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

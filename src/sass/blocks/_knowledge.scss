@@ -1,0 +1,41 @@
+.knowledge {
+  margin-top: 120px;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 30px;
+  }
+  &__item {
+    display: grid;
+    grid-template: 21px 14px/200px 35px;
+    justify-content: space-between;
+    align-content: space-between;
+    &-title {
+      position: relative;
+      @include before_circle;
+      &:before {
+        left: -13px;
+        top: -8px;
+      }
+    }
+  }
+
+  &__number {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+  }
+  &__line {
+    width: 350px;
+    height: 14px;
+    background-color: #e8e4de;
+    border-radius: 4px;
+    span {
+      display: block;
+      border-radius: 4px;
+      height: 100%;
+      background-color: $main-color;
+    }
+  }
+}
